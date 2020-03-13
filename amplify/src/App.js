@@ -3,32 +3,15 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 // import { withAuthenticator } from 'aws-amplify-react';
-// import Amplify, { Auth } from 'aws-amplify';
+// import Amplify from 'aws-amplify';
 // import awsconfig from './aws-exports';
 
+import Home from './Home';
 import Form from './Form';
 
 import './App.css';
 
 // Amplify.configure(awsconfig);
-
-// async function logout() {
-//   return Auth.signOut();
-// }
-
-// async function getUser() {
-//   try {
-//     const user = await Auth.currentAuthenticatedUser();
-
-//     console.log(user);
-
-//     return user;
-//   } catch (err) {
-//     logout();
-
-//     return { user: null };
-//   }
-// }
 
 function App() {
   return (
@@ -55,14 +38,6 @@ function App() {
         <Route path="/form" component={Form} />
       </div>
     </Router>
-  );
-}
-
-function Home() {
-  return (
-    <div>
-      <h2>Home</h2>
-    </div>
   );
 }
 
