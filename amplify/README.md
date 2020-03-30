@@ -1,3 +1,26 @@
+## Cognito sign up
+
+```bash
+amplify init
+new env
+use credentials
+```
+
+```bash
+amplify add auth
+choose all defaults
+```
+
+```bash
+amplify push
+```
+
+Once the resources have been created uncomment the code and comment out `export default App;`
+
+## Add Lambda
+
+Once you have deploy the lambda from the serverless folder Replace the `???` in Form.js with the endpoint.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
